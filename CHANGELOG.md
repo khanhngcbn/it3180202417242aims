@@ -12,3 +12,9 @@
 
 ### Fixed
 - Giỏ hàng nhận đĩa thứ 21 (#6)
+
+## [Unreleased]
+
+### Added
+- Cart.sort_by_title(): Sort DVDs by title.
+- Cart.sort_by_cost(): Sort DVDs by cost.
