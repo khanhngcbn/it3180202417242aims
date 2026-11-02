@@ -1,3 +1,6 @@
 
 def apply_discount(total, percent):
-    return total * percent / 100
+    if not 0 <= percent <= 100:
+        raise ValueError("Invalid discount percent")
+
+    return total * (1 - percent / 100)
