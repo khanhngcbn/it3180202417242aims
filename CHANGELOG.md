@@ -12,3 +12,10 @@
 
 ### Fixed
 - Giỏ hàng nhận đĩa thứ 21 (#6)
+
+
+## [1.0.1] - 2026-11-02
+
+### Fixed
+- Fixed case-sensitive DVD title search (#20).
+- Searching for "lion" now matches "The Lion King".
