@@ -8,7 +8,7 @@ class Cart:
         self.items = []
 
     def add_dvd(self, dvd):
-        if len(self.items) > MAX_NUMBERS_ORDERED:
+        if len(self.items) >= MAX_NUMBERS_ORDERED:
             print("The cart is almost full")
             return False
         self.items.append(dvd)
@@ -26,10 +26,16 @@ class Cart:
     def total_cost(self):
         return sum(item.cost for item in self.items)
 
+    
     def print_cart(self):
+        if not self.items:
+            print("The cart is empty")
+            return
+
         print("The cart contains:")
 
         for dvd in self.items:
             print(f"- {dvd.title}: {dvd.price:.2f} $")
 
         print(f"Total cost: {self.total_cost():.2f} $")
+
